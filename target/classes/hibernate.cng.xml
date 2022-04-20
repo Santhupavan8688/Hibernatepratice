@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+<!-- database properties -->
+<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/xml</property>
+<property name="hibernate.connection.username">root</property>
+<property name="hibernate.connection.password">8688</property>
+<!-- hibernate properties -->
+<property name="hibernate.show_sql">True</property>
+<property name="hibernate.hbm2ddl.auto">update</property>
+<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+<!-- mapping properties -->
+<mapping resource="student.hbm.xml"/>
+<mapping class="hibernate.Faculty"/>
+<mapping class="hibernate.Employee"/>
+<mapping class="hibernate.Employee1"/>
+<mapping class="hibernate.pemployee"/>
+<mapping class="hibernate.cemployee"/>
+<mapping class="hibernate.Bank"/>
+<mapping class="hibernate.creditcard"/>
+<mapping class="hibernate.cheque"/>
+<mapping class="hibernate.institute"/>
+<mapping class="hibernate.facult"/>
+<mapping class="hibernate.Student1"/>
+
+</session-factory>
+</hibernate-configuration>
